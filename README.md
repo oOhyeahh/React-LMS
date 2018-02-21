@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Simple ReactApp Starter Kit
 
 ## Getting started
@@ -6,3 +7,7 @@
 3. `npm install`
 4. `npm start`
 5. Remove .git folder and run `git init` to make it your repository
+=======
+# React-Project
+React ES6 
+>>>>>>> f30633458587964162de313cdb3abea84d15a614
