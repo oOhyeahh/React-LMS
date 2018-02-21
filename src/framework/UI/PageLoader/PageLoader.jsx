@@ -5,7 +5,7 @@ import './page-loader.css';
 
 export default function PageLoader({ className, children, ...other }) {
   return (
-    <div className={classnames('ui segment jr-page-loader', className)} {...other}>
+    <div className={classnames('loader', className)} {...other}>
       <div className="ui active inverted dimmer">
         <div className="ui text loader">{children || 'Loading'}</div>
       </div>
