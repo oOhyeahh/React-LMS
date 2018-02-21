@@ -1,13 +1,10 @@
-<<<<<<< HEAD
-# Simple ReactApp Starter Kit
 
-## Getting started
-1. `git clone https://github.com/ktei/react-app-starter-kit.git name-of-your-app`
+
+# React-Project
+React ES6 
+#How to Get it Start
+1.  git clone https://github.com/oOhyeahh/React-Project.git 
 2. `cd name-of-your-app`
 3. `npm install`
 4. `npm start`
 5. Remove .git folder and run `git init` to make it your repository
-=======
-# React-Project
-React ES6 
->>>>>>> f30633458587964162de313cdb3abea84d15a614
