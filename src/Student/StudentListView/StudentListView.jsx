@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 import classnames from 'classnames';
 
 import { range } from 'lodash/util';
@@ -93,6 +94,7 @@ export default class StudentListView extends React.Component {
               </a>
               {range(1, totalPage + 1).map(pageNumber => (
                 <a
+                  key={pageNumber}
                   className={classnames('item', { active: currentPage === pageNumber })}
                   onClick={currentPage === pageNumber ? undefined : this.fetchStudentsByPage.bind(this, pageNumber)}
                 >
@@ -116,6 +118,8 @@ export default class StudentListView extends React.Component {
         {!this.state.isLoading && (
           <div>
             <h1 className="ui header">Students</h1>
+            <Link to="/students/create" className="ui teal button">Add student</Link>
+            <div className="ui divider" />
             <table className="ui celled table">
               {renderHeader()}
               {this.renderBody()}

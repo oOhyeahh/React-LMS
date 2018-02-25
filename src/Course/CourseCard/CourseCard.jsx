@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import { truncate } from 'lodash/string';
 
@@ -13,10 +14,10 @@ export default function CourseCard({ course }) {
           {truncate(course.description, { length: 60 })}
         </div>
       </div>
-      <div className="ui bottom attached teal button">
+      <Link to={`/courses/${course.id}`} className="ui bottom attached teal button">
         <i className="edit icon" />
         Details
-      </div>
+      </Link>
     </div>
   );
 }
